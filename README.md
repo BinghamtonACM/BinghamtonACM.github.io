@@ -1,3 +1,3 @@
 ## Welcome to Binghamton ACM's Website
 
-Sign up for our email list [here](www.google.com)
+Join our discord [here](https://discord.gg/XqjAkF63br)
