@@ -1,4 +1,4 @@
-## Welcome to Binghamton ACM's Website
+## Binghamton ACM
 
 Join our discord [here](https://discord.gg/XqjAkF63br)!
 
