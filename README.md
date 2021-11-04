@@ -1,12 +1,15 @@
 ## Binghamton ACM
 
+Check out all our links [here](linktr.ee/bingacm)!
+
 Join our discord [here](https://discord.gg/XqjAkF63br)!
 
 
 -----
 
-### Our FALL 2021 GIM
-September 9th, 2021 @ 7:30PM in LH7
+### Under Construction
+
+Please excuse our apperance as we updating our website :)
 
 
 ---
