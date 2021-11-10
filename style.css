@@ -1,0 +1,274 @@
+:root{
+    --repeat: 1;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Arvo', serif;}
+body{
+    background-color: #e8f1f2;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.Header-Div{
+    background-color: #056b96;
+    height: 3vh;
+    width: 100%;
+    padding: 0vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#Meeting-Alert{
+    font-weight: 700;
+    color: white;
+}
+.Nav-Div{
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #038dc7;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap-reverse;
+    /* row-gap: 20vh; */
+}
+#Title{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: left;
+}
+#Title-BigText{
+    color: white;
+    text-align: center;
+    font-size: clamp(2rem, 1rem + 2vw, 7rem);
+}
+#Title-SmallText{
+    color: white;
+    font-size: clamp(.5rem, 1rem + .5vw, 3rem);
+    font-style: oblique;
+    text-align: center;
+    padding-top: .25vh;
+    margin-bottom: 1vh;
+}
+#ACM-Logo{
+    height: 10rem;
+}
+#Discord{
+    color: white;
+    font-size: clamp(.5rem, 1rem + .5vw, 3rem);
+    text-align: center;
+    padding-right: 1vw;
+}
+#Discord a{
+    color: white;
+}
+.Discord-Text{
+    animation: wave-text 3s ease-in-out 2s 1;
+}
+  
+  @keyframes wave-text{
+    00%{
+      transform: scale(1);
+    }
+    25%{
+      transform: scale(1.1);
+    }
+    50%{
+      transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+      }
+  }
+
+#Welcome-Div{
+    /*display: flex;
+    flex-direction: row;*/
+    align-items: top;
+    height: auto;
+    /*margin-left: 1vw;
+    margin-right: 2vw;*/
+    padding-top: 2vh;
+    margin: 0 auto;
+}
+#Welcome-Paragraph-Div{
+    margin: 0 auto;
+    color:black;
+    max-width: 1200px;
+    font-size: clamp(.25rem, .75rem + .5vw, 2.5rem);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    /* font-style: italic; */
+}
+
+#Eboard-Title{
+    text-align: center;
+    font-size: clamp(1rem, 1rem + 1vw, 2.5rem);
+    font-weight: 700;
+    /* font-style: italic; */
+    border: black;
+    border-width: 2px;
+    font-weight: 700;
+}
+#Meet-Eboard-Div{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+    /* width: 95%; */
+    margin: 0 auto;
+    /* height: 50vh; */
+    padding-top: 2vh;
+}
+
+#Meet-Div{
+    max-width: 25vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+}
+
+#Eboard-Div{
+    display: grid;
+    margin-left: 3vw;
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);  */
+    grid-template-columns: repeat(var(--repeat),1fr); 
+    grid-gap: 2px; 
+    width: 100%;
+    padding-left: 7vw;
+    /* background-color:black; */
+    /* border: 1px solid black; */
+}
+
+#Meet-Title{
+    font-size: clamp(1rem, 1rem + 1vw, 2.5rem);
+    font-weight: 700;
+}
+.Eboard-Mem{
+    border: 1px solid #d4d6d6;
+    background-color: #e8f1f2;
+    color: white;
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: auto;
+    grid-row-end: auto;
+    display:flex;
+    height: auto;
+    max-width: 15rem;
+    position: relative;
+    background: repeating-linear-gradient( 45deg, #e7f0f1, #e7f0f1 5px, #e8f1f2 5px, #e8f1f2 25px );
+}
+.Eboard-Img{
+    height: 100%;
+    max-width: 15rem;
+    transition: 0.3s;
+    position: relative;
+    z-index: 1;
+}
+.Eboard-Img:hover{
+    /* opacity: 0%; */
+    transform: scale(1.1);
+    z-index: 3;
+    opacity: 0%;
+}
+.Meeting{
+    padding-top: 1.5vh;
+    border-bottom: 2px solid  black;
+    font-weight: 300;
+    transition-duration: 0.3s;
+}
+.Meeting:hover{
+    transform:scale(1.1);
+}
+.Meeting-Title{
+    font-size: clamp(1rem, 1rem + .5vw, 4.25rem);
+    
+}
+.Eboard-Mem-Des{
+    color: black;
+    position: absolute;
+    width:auto;
+    z-index: 0;
+    padding-left: .4vw;
+    padding-right: .4vw;
+}
+.Eboard-Name{
+    text-align: center;
+    margin-top: .5vh;
+    font-size: clamp(.5rem, .5rem + .75vw, 5rem);
+
+}
+.Eboard-Bio{
+    margin-top: .5vh;
+    font-size: clamp(.65rem, .3rem + .5vw, .8rem);
+}
+.Eboard-Position{
+    text-align: center;
+    font-weight: 400;
+    border-bottom: 2px solid black;
+    font-style: italic;
+    padding-bottom: 2px;
+}
+#Mailing-List{
+    margin-top: 3vh;
+    font-size: clamp(1rem, 1rem + .75vw, 2.5rem);
+    text-align: center;
+}
+#Footer{
+    margin-top: 2vh;
+    text-align: center;
+    margin-bottom: 5vh;
+    color: rgb(204, 189, 189);
+    font-size: clamp(.5rem, .75rem + .5vw, 1rem);
+    font-style: italic;
+    font-weight: 100;
+}
+@media (min-width: 700px) {
+    :root {
+        --repeat: 2;
+    }
+    #Eboard-Div{
+        padding-left: 0vw;
+    }
+}
+@media (min-width: 1250px) {
+    :root {
+        --repeat: 4;
+    }
+    .Header-Div{
+        width: 95%;
+    }
+    .Nav-Div{
+        width: 95%;
+        flex-direction: row;
+    }
+}
+
+/* @media all and (min-width: 700) {
+    #Eboard-Div{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr); 
+    }
+} */
