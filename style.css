@@ -103,7 +103,7 @@ a{
     height: auto;
     /*margin-left: 1vw;
     margin-right: 2vw;*/
-    padding-top: 2vh;
+    padding-top: 3vh;
     margin: 0 auto;
 }
 #Welcome-Paragraph-Div{
@@ -137,7 +137,9 @@ a{
     /* width: 95%; */
     margin: 0 auto;
     /* height: 50vh; */
-    padding-top: 2vh;
+    padding-top: 5vh;
+    padding-right: 3vw;
+    padding-left:3vw;
 }
 
 #Meet-Div{
@@ -245,7 +247,7 @@ a{
     font-style: italic;
     font-weight: 100;
 }
-@media (min-width: 700px) {
+@media (min-width: 725px) {
     :root {
         --repeat: 2;
     }
@@ -253,7 +255,7 @@ a{
         padding-left: 0vw;
     }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1300px) {
     :root {
         --repeat: 4;
     }
