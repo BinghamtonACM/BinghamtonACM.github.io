@@ -51,6 +51,8 @@ a{
     flex-direction: column;
     justify-content: start;
     align-items: left;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 #Title-BigText{
     color: white;
@@ -131,9 +133,9 @@ a{
 }
 #Meet-Eboard-Div{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: top;
-    justify-content: center;
+    justify-content: space-evenly;
     /* width: 95%; */
     margin: 0 auto;
     /* height: 50vh; */
@@ -143,32 +145,35 @@ a{
 }
 
 #Meet-Div{
-    max-width: 25vw;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: space-between;
+    padding-bottom: 3vh;
+    padding-right: 3vw;
+    padding-left: 3vw;
 }
 
 #Eboard-Div{
     display: grid;
-    margin-left: 3vw;
+    margin: 0 auto;
     /* grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);  */
     grid-template-columns: repeat(var(--repeat),1fr); 
     grid-gap: 2px; 
     width: 100%;
-    padding-left: 7vw;
+    justify-content: center;
     /* background-color:black; */
     /* border: 1px solid black; */
 }
-
 #Meet-Title{
     font-size: clamp(1rem, 1rem + 1vw, 2.5rem);
     font-weight: 700;
+    text-align: center;
 }
 .Eboard-Mem{
+    margin: 0 auto;
     border: 1px solid #d4d6d6;
     background-color: #e8f1f2;
     color: white;
@@ -198,17 +203,19 @@ a{
     opacity: 0%;
 }
 .Meeting{
-    padding-top: 1.5vh;
+    padding-top: 1vh;
     border-bottom: 2px solid  black;
     font-weight: 300;
     transition-duration: 0.3s;
+    margin: 0 auto;
 }
 .Meeting:hover{
     transform:scale(1.1);
 }
+
+
 .Meeting-Title{
     font-size: clamp(1rem, 1rem + .5vw, 4.25rem);
-    
 }
 .Eboard-Mem-Des{
     color: black;
@@ -255,6 +262,23 @@ a{
     }
     #Eboard-Div{
         padding-left: 0vw;
+    }
+    #Meet-Eboard-Div{
+        flex-direction: row;
+    }
+    #Meet-Title{
+        margin: 0 auto;
+    }
+    .Meeting{
+        margin: 0;
+    }
+    #Meet-Div{
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    #Title{
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 @media (min-width: 1300px) {
