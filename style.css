@@ -242,6 +242,31 @@ a{
     font-style: italic;
     padding-bottom: 2px;
 }
+#Sponsors-Div{
+    padding-top: 2ch;
+    padding-bottom: 2ch;
+    padding-left: 2ch;
+    padding-right: 2ch;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#Sponsors-Title{
+    margin: 0 auto;
+    font-size: clamp(1rem, 1rem + 1vw, 2.5rem);
+    font-weight: 700;
+    /* font-style: italic; */
+    border: black;
+    border-width: 2px;
+    font-weight: 700;
+    /* padding-top: 2ch;
+    padding-bottom: 2ch; */
+}
+#Bloomberg{
+    /* padding-top: 2ch;
+    padding-bottom: 2ch; */
+    max-width: 50%;
+}
 #Mailing-List{
     margin-top: 3vh;
     font-size: clamp(1rem, 1rem + .75vw, 2.5rem);
@@ -280,6 +305,12 @@ a{
         padding-left: 0;
         padding-right: 0;
     }
+    #Sponsors-Div{
+        flex-direction: column;
+    }
+    #Bloomberg{
+        margin: 0 auto;
+    }
 }
 @media (min-width: 1300px) {
     :root {
@@ -292,6 +323,7 @@ a{
         width: 95%;
         flex-direction: row;
     }
+
 }
 
 /* @media all and (min-width: 700) {
