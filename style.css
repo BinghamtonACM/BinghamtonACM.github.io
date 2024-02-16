@@ -154,6 +154,17 @@ a{
     padding-right: 3vw;
     padding-left: 3vw;
 }
+#Meet-Div2{
+    /* for past presentation pages */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    padding-bottom: 3vh;
+    padding-right: 20vw;
+    padding-left: 20vw;
+}
 
 #Eboard-Div{
     display: grid;
@@ -210,10 +221,19 @@ a{
     transition-duration: 0.3s;
     margin: 0 auto;
 }
+
 .Meeting:hover{
     transform:scale(1.1);
 }
 
+.MeetingPresentations{
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    border-bottom: 2px solid  black;
+    font-weight: 300;
+    transition-duration: 0.3s;
+    margin: 0 auto;
+}
 
 .Meeting-Title{
     font-size: clamp(1rem, 1rem + .5vw, 4.25rem);
