@@ -1,8 +1,62 @@
-:root{
+:root {
     --repeat: 1;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption {
     margin: 0;
     padding: 0;
     border: 0;
@@ -10,16 +64,19 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-    font-family: 'Arvo', serif;}
-body{
+    font-family: 'Arvo', serif;
+}
+
+body {
     background-color: #e8f1f2;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
 
-.Header-Div{
+.Header-Div {
     background-color: #056b96;
     height: 3vh;
     width: 100%;
@@ -30,36 +87,41 @@ a{
     justify-content: center;
     align-items: center;
 }
-#Meeting-Alert{
+
+#Meeting-Alert {
     font-weight: 700;
     color: white;
 }
-.Nav-Div{
+
+.Nav-Div {
     height: auto;
     width: 100%;
     margin: 0 auto;
     background-color: #038dc7;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     flex-wrap: wrap-reverse;
     /* row-gap: 20vh; */
 }
-#Title{
-    display:flex;
+
+#Title {
+    display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: left;
     padding-left: 2vw;
     padding-right: 2vw;
 }
-#Title-BigText{
+
+#Title-BigText {
     color: white;
     text-align: center;
     font-size: clamp(2rem, 1rem + 2vw, 7rem);
 }
-#Title-SmallText{
+
+#Title-SmallText {
     color: white;
     font-size: clamp(.5rem, 1rem + .5vw, 3rem);
     font-style: oblique;
@@ -67,38 +129,45 @@ a{
     padding-top: .25vh;
     margin-bottom: 1vh;
 }
-#ACM-Logo{
+
+#ACM-Logo {
     height: 10rem;
 }
-#Discord{
+
+#Discord {
     color: white;
     font-size: clamp(.5rem, 1rem + .5vw, 3rem);
     text-align: center;
     padding-right: 1vw;
 }
-#Discord a{
+
+#Discord a {
     color: white;
 }
-.Discord-Text{
+
+.Discord-Text {
     animation: wave-text 3s ease-in-out 2s 1;
 }
-  
-  @keyframes wave-text{
-    00%{
-      transform: scale(1);
-    }
-    25%{
-      transform: scale(1.1);
-    }
-    50%{
-      transform: scale(1);
-    }
-    100%{
-        transform: scale(1);
-      }
-  }
 
-#Welcome-Div{
+@keyframes wave-text {
+    00% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#Welcome-Div {
     /*display: flex;
     flex-direction: row;*/
     align-items: top;
@@ -108,9 +177,10 @@ a{
     padding-top: 3vh;
     margin: 0 auto;
 }
-#Welcome-Paragraph-Div{
+
+#Welcome-Paragraph-Div {
     margin: 0 auto;
-    color:black;
+    color: black;
     max-width: 1200px;
     font-size: clamp(.25rem, .75rem + .5vw, 2.5rem);
     text-align: center;
@@ -122,7 +192,7 @@ a{
     /* font-style: italic; */
 }
 
-#Eboard-Title{
+#Eboard-Title {
     text-align: center;
     font-size: clamp(1rem, 1rem + 1vw, 2.5rem);
     font-weight: 700;
@@ -131,9 +201,10 @@ a{
     border-width: 2px;
     font-weight: 700;
 }
-#Meet-Eboard-Div{
+
+#Meet-Eboard-Div {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: top;
     justify-content: space-evenly;
     /* width: 95%; */
@@ -141,10 +212,10 @@ a{
     /* height: 50vh; */
     padding-top: 5vh;
     padding-right: 3vw;
-    padding-left:3vw;
+    padding-left: 3vw;
 }
 
-#Meet-Div{
+#Meet-Div {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -154,7 +225,8 @@ a{
     padding-right: 3vw;
     padding-left: 3vw;
 }
-#Meet-Div2{
+
+#Meet-Div2 {
     /* for past presentation pages */
     height: 100%;
     display: flex;
@@ -166,24 +238,26 @@ a{
     padding-left: 20vw;
 }
 
-#Eboard-Div{
+#Eboard-Div {
     display: grid;
     margin: 0 auto;
     /* grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);  */
-    grid-template-columns: repeat(var(--repeat),1fr); 
-    grid-gap: 2px; 
+    grid-template-columns: repeat(var(--repeat), 1fr);
+    grid-gap: 2px;
     width: 100%;
     justify-content: center;
     /* background-color:black; */
     /* border: 1px solid black; */
 }
-#Meet-Title{
+
+#Meet-Title {
     font-size: clamp(1rem, 1rem + 1vw, 2.5rem);
     font-weight: 700;
     text-align: center;
 }
-.Eboard-Mem{
+
+.Eboard-Mem {
     margin: 0 auto;
     border: 1px solid #d4d6d6;
     background-color: #e8f1f2;
@@ -192,15 +266,16 @@ a{
     grid-column-end: auto;
     grid-row-start: auto;
     grid-row-end: auto;
-    display:flex;
+    display: flex;
     height: auto;
     max-width: 15rem;
     height: 20rem;
     position: relative;
-    background: repeating-linear-gradient( 45deg, #e7f0f1, #e7f0f1 5px, #e8f1f2 5px, #e8f1f2 25px );
+    background: repeating-linear-gradient(45deg, #e7f0f1, #e7f0f1 5px, #e8f1f2 5px, #e8f1f2 25px);
 
 }
-.Eboard-Img{
+
+.Eboard-Img {
     height: 20rem;
     max-width: 15rem;
     min-width: 15rem;
@@ -208,62 +283,69 @@ a{
     position: relative;
     z-index: 1;
 }
-.Eboard-Img:hover{
+
+.Eboard-Img:hover {
     /* opacity: 0%; */
     transform: scale(1.1);
     z-index: 3;
     opacity: 0%;
 }
-.Meeting{
+
+.Meeting {
     padding-top: 1vh;
-    border-bottom: 2px solid  black;
+    border-bottom: 2px solid black;
     font-weight: 300;
     transition-duration: 0.3s;
     margin: 0 auto;
 }
 
-.Meeting:hover{
-    transform:scale(1.1);
+.Meeting:hover {
+    transform: scale(1.1);
 }
 
-.MeetingPresentations{
+.MeetingPresentations {
     padding-top: 2.5vh;
     padding-bottom: 2.5vh;
-    border-bottom: 2px solid  black;
+    border-bottom: 2px solid black;
     font-weight: 300;
     transition-duration: 0.3s;
     margin: 0 auto;
 }
 
-.Meeting-Title{
+.Meeting-Title {
     font-size: clamp(1rem, 1rem + .5vw, 4.25rem);
 }
-.Eboard-Mem-Des{
+
+.Eboard-Mem-Des {
     color: black;
     position: absolute;
-    width:auto;
+    width: auto;
     z-index: 0;
     padding-left: .4vw;
     padding-right: .4vw;
 }
-.Eboard-Name{
+
+.Eboard-Name {
     text-align: center;
     margin-top: .5vh;
     font-size: clamp(.5rem, .5rem + .75vw, 5rem);
 
 }
-.Eboard-Bio{
+
+.Eboard-Bio {
     margin-top: .5vh;
     font-size: clamp(.65rem, .3rem + .5vw, .8rem);
 }
-.Eboard-Position{
+
+.Eboard-Position {
     text-align: center;
     font-weight: 400;
     border-bottom: 2px solid black;
     font-style: italic;
     padding-bottom: 2px;
 }
-#Sponsors-Div{
+
+#Sponsors-Div {
     padding-top: 2ch;
     padding-bottom: 2ch;
     padding-left: 2ch;
@@ -272,7 +354,8 @@ a{
     flex-direction: row;
     justify-content: space-evenly;
 }
-#Sponsors-Title{
+
+#Sponsors-Title {
     margin: 0 auto;
     font-size: clamp(1rem, 1rem + 1vw, 2.5rem);
     font-weight: 700;
@@ -283,17 +366,20 @@ a{
     /* padding-top: 2ch;
     padding-bottom: 2ch; */
 }
-#Bloomberg{
+
+#Bloomberg {
     /* padding-top: 2ch;
     padding-bottom: 2ch; */
     max-width: 50%;
 }
-#Mailing-List{
+
+#Mailing-List {
     margin-top: 3vh;
     font-size: clamp(1rem, 1rem + .75vw, 2.5rem);
     text-align: center;
 }
-#Footer{
+
+#Footer {
     margin-top: 2vh;
     text-align: center;
     margin-bottom: 5vh;
@@ -302,45 +388,57 @@ a{
     font-style: italic;
     font-weight: 100;
 }
+
 @media (min-width: 725px) {
     :root {
         --repeat: 2;
     }
-    #Eboard-Div{
+
+    #Eboard-Div {
         padding-left: 0vw;
     }
-    #Meet-Eboard-Div{
+
+    #Meet-Eboard-Div {
         flex-direction: row;
     }
-    #Meet-Title{
+
+    #Meet-Title {
         margin: 0 auto;
     }
-    .Meeting{
+
+    .Meeting {
         margin: 0;
     }
-    #Meet-Div{
+
+    #Meet-Div {
         padding-left: 2vw;
         padding-right: 2vw;
     }
-    #Title{
+
+    #Title {
         padding-left: 0;
         padding-right: 0;
     }
-    #Sponsors-Div{
+
+    #Sponsors-Div {
         flex-direction: column;
     }
-    #Bloomberg{
+
+    #Bloomberg {
         margin: 0 auto;
     }
 }
+
 @media (min-width: 1300px) {
     :root {
         --repeat: 4;
     }
-    .Header-Div{
+
+    .Header-Div {
         width: 95%;
     }
-    .Nav-Div{
+
+    .Nav-Div {
         width: 95%;
         flex-direction: row;
     }
@@ -354,10 +452,12 @@ a{
     }
 } */
 
-#Meet-Eboard-Div-Alum{
+#Meet-Eboard-Div-Alum {
     display: flex;
-    flex-direction: row;  /*changed from row*/
-    align-items: top; /*changed from center*/
+    flex-direction: row;
+    /*changed from row*/
+    align-items: top;
+    /*changed from center*/
     justify-content: space-evenly;
     /* width: 95%; */
     margin: 0 auto;
@@ -366,6 +466,7 @@ a{
     padding-right: 3vw;
     padding-left: 3vw;
 }
+
 /*
 #Meet-Eboard-Div{
     display: flex;
@@ -381,7 +482,7 @@ a{
 }
 */
 
-#Eboard-Title-Alum{
+#Eboard-Title-Alum {
     text-align: center;
     align-items: center;
     flex-direction: row;
@@ -394,7 +495,7 @@ a{
 }
 
 
-#verticle-layout{
+#verticle-layout {
     text-align: center;
     align-items: center;
     flex-direction: row;
@@ -406,20 +507,41 @@ a{
     font-weight: 700;
 }
 
-#Eboard-Div-Alum{
+#Eboard-Div-Alum {
     align-items: center;
     display: grid;
     margin: 0 auto;
     /* grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);  */
-    grid-template-columns: repeat(var(--repeat),1fr); 
-    grid-gap: 2px; 
+    grid-template-columns: repeat(var(--repeat), 1fr);
+    grid-gap: 2px;
     width: 100%;
     justify-content: center;
     /* background-color:black; */
     /* border: 1px solid black; */
 }
 
-#link{
+#link {
     text-decoration: underline;
+}
+
+.photo-gallery-img {
+    width: 50vh;
+    height: 50vh;
+    background: red;
+}
+
+.photo-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.photo-gallery-item {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
 }
