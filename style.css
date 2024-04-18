@@ -526,7 +526,7 @@ a {
 }
 
 .photo-gallery-img {
-    width: 50vh;
+    width: 60vh;
     height: 50vh;
     background: red;
 }
@@ -534,10 +534,10 @@ a {
 .photo-gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
+    gap: 3rem;
     justify-content: center;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .photo-gallery-item {
