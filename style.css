@@ -64,7 +64,7 @@ caption {
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-    font-family: 'Arvo', serif;
+    font-family: "Arvo", serif;
 }
 
 body {
@@ -123,10 +123,10 @@ a {
 
 #Title-SmallText {
     color: white;
-    font-size: clamp(.5rem, 1rem + .5vw, 3rem);
+    font-size: clamp(0.5rem, 1rem + 0.5vw, 3rem);
     font-style: oblique;
     text-align: center;
-    padding-top: .25vh;
+    padding-top: 0.25vh;
     margin-bottom: 1vh;
 }
 
@@ -136,7 +136,7 @@ a {
 
 #Discord {
     color: white;
-    font-size: clamp(.5rem, 1rem + .5vw, 3rem);
+    font-size: clamp(0.5rem, 1rem + 0.5vw, 3rem);
     text-align: center;
     padding-right: 1vw;
 }
@@ -182,7 +182,7 @@ a {
     margin: 0 auto;
     color: black;
     max-width: 1200px;
-    font-size: clamp(.25rem, .75rem + .5vw, 2.5rem);
+    font-size: clamp(0.25rem, 0.75rem + 0.5vw, 2.5rem);
     text-align: center;
     display: flex;
     justify-content: center;
@@ -272,7 +272,6 @@ a {
     height: 20rem;
     position: relative;
     background: repeating-linear-gradient(45deg, #e7f0f1, #e7f0f1 5px, #e8f1f2 5px, #e8f1f2 25px);
-
 }
 
 .Eboard-Img {
@@ -313,7 +312,7 @@ a {
 }
 
 .Meeting-Title {
-    font-size: clamp(1rem, 1rem + .5vw, 4.25rem);
+    font-size: clamp(1rem, 1rem + 0.5vw, 4.25rem);
 }
 
 .Eboard-Mem-Des {
@@ -321,20 +320,19 @@ a {
     position: absolute;
     width: auto;
     z-index: 0;
-    padding-left: .4vw;
-    padding-right: .4vw;
+    padding-left: 0.4vw;
+    padding-right: 0.4vw;
 }
 
 .Eboard-Name {
     text-align: center;
-    margin-top: .5vh;
-    font-size: clamp(.5rem, .5rem + .75vw, 5rem);
-
+    margin-top: 0.5vh;
+    font-size: clamp(0.5rem, 0.5rem + 0.75vw, 5rem);
 }
 
 .Eboard-Bio {
-    margin-top: .5vh;
-    font-size: clamp(.65rem, .3rem + .5vw, .8rem);
+    margin-top: 0.5vh;
+    font-size: clamp(0.65rem, 0.3rem + 0.5vw, 0.8rem);
 }
 
 .Eboard-Position {
@@ -375,7 +373,7 @@ a {
 
 #Mailing-List {
     margin-top: 3vh;
-    font-size: clamp(1rem, 1rem + .75vw, 2.5rem);
+    font-size: clamp(1rem, 1rem + 0.75vw, 2.5rem);
     text-align: center;
 }
 
@@ -384,7 +382,7 @@ a {
     text-align: center;
     margin-bottom: 5vh;
     color: rgb(204, 189, 189);
-    font-size: clamp(.5rem, .75rem + .5vw, 1rem);
+    font-size: clamp(0.5rem, 0.75rem + 0.5vw, 1rem);
     font-style: italic;
     font-weight: 100;
 }
@@ -442,7 +440,6 @@ a {
         width: 95%;
         flex-direction: row;
     }
-
 }
 
 /* @media all and (min-width: 700) {
@@ -454,17 +451,10 @@ a {
 
 #Meet-Eboard-Div-Alum {
     display: flex;
-    flex-direction: row;
-    /*changed from row*/
     align-items: top;
-    /*changed from center*/
     justify-content: space-evenly;
-    /* width: 95%; */
     margin: 0 auto;
-    /* height: 50vh; */
-    padding-top: 5vh;
-    padding-right: 3vw;
-    padding-left: 3vw;
+    padding: 5vh;
 }
 
 /*
@@ -494,17 +484,14 @@ a {
     font-weight: 700;
 }
 
-
 #verticle-layout {
     text-align: center;
     align-items: center;
     flex-direction: row;
     font-size: clamp(1rem, 1rem + 1vw, 2.5rem);
-    font-weight: 700;
     /* font-style: italic; */
     border: black;
     border-width: 2px;
-    font-weight: 700;
 }
 
 #Eboard-Div-Alum {
@@ -514,9 +501,9 @@ a {
     /* grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);  */
     grid-template-columns: repeat(var(--repeat), 1fr);
-    grid-gap: 2px;
     width: 100%;
     justify-content: center;
+    grid-gap: 2px;
     /* background-color:black; */
     /* border: 1px solid black; */
 }
