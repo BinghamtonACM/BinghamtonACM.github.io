@@ -531,3 +531,12 @@ a {
     justify-content: center;
     border: 1px solid black;
 }
+
+.alumni-company-img {
+    max-width: 200px;
+}
+
+#alumni-companies-img-div {
+    display: flex;
+    gap: 1rem;
+}
