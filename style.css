@@ -538,5 +538,23 @@ a {
 
 #alumni-companies-img-div {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
+}
+
+#alumni-companies-img-div-outer {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+#alumni-companies-img-div-outer-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+#alumni-companies-span {
+    font-size: 2rem;
 }
